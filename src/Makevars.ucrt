@@ -7,7 +7,7 @@
 ###endif
 
 CXX11 = g++
-PKG_CXXFLAGS = -std=c++11
+#PKG_CXXFLAGS = -std=c++11
 PKG_LIBS = -lfftw3 -lm
 #PKG_LIBS = -L$(LIB_FFTW)/lib -lfftw3
 

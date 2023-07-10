@@ -1,4 +1,4 @@
-fddc567af046934194fc6ffcba447d9e *DESCRIPTION
+281016c55ab14dd21ac7e94d580a8899 *DESCRIPTION
 cde9fe50da5a8c80a4ddbd3e3cec867e *NAMESPACE
 fce058cda7ec57d48b2b818f011952a7 *R/RcppExports.R
 2d34980cf8a72df4e38ffe5216de3e69 *R/cont_ks_distribution.R
@@ -7,7 +7,7 @@ ed107f587e32b56fed9defda957c2ed9 *R/cont_ks_test.R
 3cae576e9be19169cc75b97f6cf0d5a1 *R/disc_ks_test.R
 40e0e2c9716b5ffdb31341c831166db0 *R/mixed_ks_distribution.R
 030c5a472d5bd7896c6a447677db131c *R/mixed_ks_test.R
-c4dbae29b89937f7a7ff5fb72cecee97 *build/partial.rdb
+a8f41f921074aa1a1ed2c0774114c172 *build/partial.rdb
 2ee6281df3a48ebf8e9b5943efc6bce6 *cleanup
 0e422ae34feaca73e49f36428747d100 *configure
 4f25e847407d41e4611a3d2251970d4f *configure.ac
@@ -26,8 +26,8 @@ a4b523df7795af0f0283ac80fa3842f0 *man/ks_c_cdf_Rcpp.Rd
 cbda7868d9f5ce6869647146198c12ba *man/mixed_ks_c_cdf.Rd
 08f860ef4c054bc8777086875150930c *man/mixed_ks_test.Rd
 670bff7b807315d7110fbc5f4c4219c5 *src/Makevars.in
-be644f637ce2243749f9680b577045be *src/Makevars.ucrt
-c85908823e42533977efad892838f9cf *src/Makevars.win
+afe9598957975a1a61df007920e5b058 *src/Makevars.ucrt
+44bc7eca158c1725caaa0a4d2de5e537 *src/Makevars.win
 024f4d97d04f4629d94b45970b3bad84 *src/RcppExports.cpp
 0a7abd2989984b79ac40dbab738eea27 *src/aligned_mem.h
 f2e770cdcab97688716058729d9f0e7d *src/common.h
