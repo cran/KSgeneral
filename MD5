@@ -1,13 +1,13 @@
-281016c55ab14dd21ac7e94d580a8899 *DESCRIPTION
+fbe0c1c2a9fe00cd94d5e74ed5e6b8ab *DESCRIPTION
 cde9fe50da5a8c80a4ddbd3e3cec867e *NAMESPACE
-fce058cda7ec57d48b2b818f011952a7 *R/RcppExports.R
+67c2f3d98e32709f874caa6a0f0bd67a *R/RcppExports.R
 2d34980cf8a72df4e38ffe5216de3e69 *R/cont_ks_distribution.R
 ed107f587e32b56fed9defda957c2ed9 *R/cont_ks_test.R
 66da539e8bc71d134aae6298deff8335 *R/disc_ks_distribution.R
 3cae576e9be19169cc75b97f6cf0d5a1 *R/disc_ks_test.R
 40e0e2c9716b5ffdb31341c831166db0 *R/mixed_ks_distribution.R
 030c5a472d5bd7896c6a447677db131c *R/mixed_ks_test.R
-a8f41f921074aa1a1ed2c0774114c172 *build/partial.rdb
+152399618fc0bcaf1abc8d94777810f6 *build/partial.rdb
 2ee6281df3a48ebf8e9b5943efc6bce6 *cleanup
 0e422ae34feaca73e49f36428747d100 *configure
 4f25e847407d41e4611a3d2251970d4f *configure.ac
