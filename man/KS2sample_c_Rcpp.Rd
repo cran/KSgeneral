@@ -45,7 +45,7 @@ Different value of \code{w_vec} specifies the weighted Kolmogorov-Smirnov test d
  
 The numeric array \code{M} specifies the number of \emph{repeated observations} in the pooled sample. For a particular realization of the pooled sample \eqn{\bm{Z}_{m,n}=(X_{1},..., X_{m},Y_{1},..., Y_{n})}{}, let there be \eqn{k}{} distinct values, \eqn{a_1<a_2<...<a_k}{}, in the ordered, pooled sample \eqn{(z_1\leq z_2\leq \ldots \leq z_{m+n})}{}, where \eqn{k\leq m+n}{}, and where \eqn{m_i}{}=\code{M[i]} is the number of times \eqn{a_i}{}, \eqn{i=1,\ldots,k}{} appears in the pooled sample. The calculated complementary p-value is the conditional probability:
 \deqn{P(D_{m,n}< q)}{}
-where \eqn{D_{m,n}}{} is the two-sample Kolmogorov-Smirnov test statistic defined according to the value of \code{weight} and \code{alternative}, for two samples \eqn{\bm{X}'_m}{} and  \eqn{\bm{Y}'_n}{} of sizes \eqn{m}{} and \eqn{n}{}, \emph{randomly drawn from the pooled sample without replacement}, i.e. \eqn{D_{m,n}}{} is defined on the space \eqn{\Omega}{} (see further details in \code{\link{KS2sample}}), and \eqn{q}{} is the observed value of \eqn{\Delta_{m,n}}{} defined according to the value of \code{weight} and \code{alternative} with respect to the two observed samples \eqn{\bm{X}_m}{} and \eqn{\bm{Y}_n}{}.
+where \eqn{D_{m,n}}{} is the two-sample Kolmogorov-Smirnov test statistic defined according to the value of \code{weight} and \code{alternative}, for two samples \eqn{\bm{X}'_m}{} and  \eqn{\bm{Y}'_n}{} of sizes \eqn{m}{} and \eqn{n}{}, \emph{randomly drawn from the pooled sample without replacement}, i.e. \eqn{D_{m,n}}{} is defined on the space \eqn{\Omega}{} (see further details in \code{\link{KS2sample}}), and \eqn{q\in [0,1]}{}.
 
  
 

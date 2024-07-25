@@ -99,7 +99,7 @@ KS2sample <- function(x, y, alternative = c("two.sided", "less", "greater"),
   
   
 
-  names(DSTAT) <- "D"
+  names(DSTAT) <- "d"
   Method <- paste(Method, "Two-sample Kolmogorov-Smirnov Test", Method2, Method1)  
   result <- ifelse(tail,
                    KS2sample_Rcpp(Nx, Ny, KIND, M, DSTAT, W_vec, tol),

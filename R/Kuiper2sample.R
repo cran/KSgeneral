@@ -31,7 +31,7 @@ Kuiper2sample <- function(x, y, conservative = F, tail = T) {
     }
   }
   
-  names(DSTAT) <- "V"
+  names(DSTAT) <- "v"
   Method <- paste("Two-sample Kuiper Test", Method1, Method2)
   result <- ifelse(tail,
                    Kuiper2sample_Rcpp(Nx, Ny, M, DSTAT),

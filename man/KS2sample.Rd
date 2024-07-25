@@ -4,7 +4,7 @@
 Computes the p-value for a (weighted) two-sample Kolmogorov-Smirnov test, given an arbitrary positive weight function and arbitrary data samples with possibly repeated observations (i.e. ties)
 }
 \description{
-Computes the p-value \eqn{P(D_{m,n} \ge q)}{}, where \eqn{D_{m,n}}{} is the one- or two-sided two-sample Kolmogorov-Smirnov test statistic with weight function \code{weight}, \eqn{q}{} is the observed value of KS statistic computed based on two data samples \eqn{\{x_{1},..., x_{m}\}}{} and \eqn{\{y_{1},..., y_{n}\}}{} that may come from continuous, discrete or mixed distribution, i.e. they may have repeated observations (ties).
+Computes the p-value \eqn{P(D_{m,n} \ge q)}{}, where \eqn{D_{m,n}}{} is the one- or two-sided two-sample Kolmogorov-Smirnov test statistic with weight function \code{weight}, when \eqn{q}{} = \code{d}, i.e. the observed value of KS statistic computed based on two data samples \eqn{\{x_{1},..., x_{m}\}}{} and \eqn{\{y_{1},..., y_{n}\}}{} that may come from continuous, discrete or mixed distribution, i.e. they may have repeated observations (ties).
 }
 \usage{
 KS2sample(x, y, alternative = c("two.sided", "less", "greater"),
@@ -52,7 +52,7 @@ If one wants to implement a weighted test with a user-specified weight function,
 	
 For a particular realization of the pooled sample \eqn{\bm{Z}_{m,n}}{}, let there be \eqn{k}{} distinct values, \eqn{a_1<a_2<...<a_k}{}, in the ordered, pooled sample \eqn{(z_1\leq z_2\leq \ldots \leq z_{m+n})}{}, where \eqn{k\leq m+n}{}, and where \eqn{m_i}{} is the number of times \eqn{a_i}{}, \eqn{i=1,\ldots,k}{} appears in the pooled sample. The p-value is then defined as the probability
 \deqn{p=P\left(D_{m,n}\geq q\right),}{}
-where \eqn{D_{m,n}}{} is the two-sample Kolmogorov-Smirnov test statistic defined according to the value of \code{weight} and \code{alternative}, for two samples \eqn{\bm{X}'_m}{} and  \eqn{\bm{Y}'_n}{} of sizes \eqn{m}{} and \eqn{n}{}, \emph{randomly drawn from the pooled sample without replacement} and \eqn{q}{} is the observed value of the statistic calculated based on the user provided data samples \code{x} and \code{y}. By default \code{tail = T}, the p-value is returned, otherwise \code{1 - p} is returned.
+where \eqn{D_{m,n}}{} is the two-sample Kolmogorov-Smirnov test statistic defined according to the value of \code{weight} and \code{alternative}, for two samples \eqn{\bm{X}'_m}{} and  \eqn{\bm{Y}'_n}{} of sizes \eqn{m}{} and \eqn{n}{}, \emph{randomly drawn from the pooled sample without replacement} and \eqn{q}{} = \code{d}, the observed value of the statistic calculated based on the user provided data samples \code{x} and \code{y}. By default \code{tail = T}, the p-value is returned, otherwise \eqn{1 - p} is returned.
 
 Note that, \eqn{D_{m,n}}{} is defined on the space \eqn{\Omega}{} of all possible pairs,  \eqn{C = \frac{(m+n)!}{m!n!}}{}  of edfs \eqn{F_m(x,\omega)}{} and \eqn{G_n(x,\omega)}{}, \eqn{\omega \in \Omega}{}, that correspond to the pairs of samples \eqn{\bm{X}'_m}{} and  \eqn{\bm{Y}'_n}{}, randomly drawn from, \eqn{\bm{Z}_{m+n}}{}, as follows.  First, \eqn{m}{} observations are drawn at random without replacement, forming the first sample \eqn{\bm{X}'_m}{}, with corresponding edf, \eqn{F_m(x,\omega)}{}. The remaining \eqn{n} observations are then assigned to the second sample \eqn{\bm{Y}'_n}{}, with corresponding edf \eqn{G_n(x,\omega)}{}. Observations are then replaced back in \eqn{\bm{Z}_{m+n}}{} and re-sampling is continued until the occurrence of all the \eqn{C}{} possible pairs of edfs \eqn{F_m(x,\omega)}{} and \eqn{G_n(x,\omega)}{},  \eqn{\omega \in \Omega}. The pairs of edf's may be coincident if there are ties in the data and each pair, \eqn{F_m(x,\omega)}{} and \eqn{G_n(x,\omega)}{} occurs with probability \eqn{1/C}.
 	
@@ -64,7 +64,7 @@ Note that, \eqn{D_{m,n}}{} is defined on the space \eqn{\Omega}{} of all possibl
 }
 \value{
   A list with class \code{"htest"} containing the following components:
-  \item{statistic}{the value of the test statistic.}
+  \item{statistic}{the value of the test statistic \code{d}.}
   \item{p.value}{the p-value of the test.}
   \item{alternative}{a character string describing the alternative
     hypothesis.}
