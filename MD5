@@ -1,4 +1,4 @@
-7647eaedb16f596e980b225a814a8f34 *DESCRIPTION
+2828a091526016ec94e95bf32bfd4203 *DESCRIPTION
 cde9fe50da5a8c80a4ddbd3e3cec867e *NAMESPACE
 62a28efa9f8a9ea33c97622231066f23 *R/KS2sample.R
 0705ae3cc0ccd6cc27b93b7ca579dd60 *R/Kuiper2sample.R
@@ -9,7 +9,7 @@ ed107f587e32b56fed9defda957c2ed9 *R/cont_ks_test.R
 3cae576e9be19169cc75b97f6cf0d5a1 *R/disc_ks_test.R
 40e0e2c9716b5ffdb31341c831166db0 *R/mixed_ks_distribution.R
 030c5a472d5bd7896c6a447677db131c *R/mixed_ks_test.R
-79f453042df379f7108650d17976ba3e *build/partial.rdb
+a2fbc02a8a2d487fffd0b026f24040ca *build/partial.rdb
 2ee6281df3a48ebf8e9b5943efc6bce6 *cleanup
 0e422ae34feaca73e49f36428747d100 *configure
 4f25e847407d41e4611a3d2251970d4f *configure.ac
@@ -30,7 +30,7 @@ e8d73e782ad0ba432d87edff7eedf60b *man/cont_ks_distribution.Rd
 74efa4f82a52b3c6ff3a1a5e4b99c3b6 *man/disc_ks_c_cdf.Rd
 0ccaa66a0c1bf7d63b6b507124c643ff *man/disc_ks_test.Rd
 a4b523df7795af0f0283ac80fa3842f0 *man/ks_c_cdf_Rcpp.Rd
-76bf7362094ac0ae6a51b9b1ea981eef *man/ksgeneral-package.Rd
+80fe471d80bb67488ed0d477d81354a8 *man/ksgeneral-package.Rd
 cbda7868d9f5ce6869647146198c12ba *man/mixed_ks_c_cdf.Rd
 08f860ef4c054bc8777086875150930c *man/mixed_ks_test.Rd
 670bff7b807315d7110fbc5f4c4219c5 *src/Makevars.in

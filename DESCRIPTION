@@ -1,6 +1,6 @@
 Package: KSgeneral
 Type: Package
-Version: 2.0.1
+Version: 2.0.2
 Title: Computing P-Values of the One-Sample K-S Test and the Two-Sample
         K-S and Kuiper Tests for (Dis)Continuous Null Distribution
 Author: Dimitrina S. Dimitrova <D.Dimitrova@city.ac.uk>,
@@ -21,6 +21,6 @@ LazyData: true
 Imports: Rcpp (>= 0.12.12), MASS, dgof
 LinkingTo: Rcpp
 NeedsCompilation: yes
-Packaged: 2024-07-25 19:10:37 UTC; jy
+Packaged: 2024-07-26 09:17:59 UTC; jy
 Repository: CRAN
-Date/Publication: 2024-07-25 22:30:10 UTC
+Date/Publication: 2024-07-29 17:20:12 UTC
