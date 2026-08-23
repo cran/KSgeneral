@@ -99,12 +99,9 @@ KS2sample <- function(x, y, alternative = c("two.sided", "less", "greater"),
   
   
 
-  names(DSTAT) <- "d"
+  names(DSTAT) <- "D"
   Method <- paste(Method, "Two-sample Kolmogorov-Smirnov Test", Method2, Method1)  
-  result <- ifelse(tail,
-                   KS2sample_Rcpp(Nx, Ny, KIND, M, DSTAT, W_vec, tol),
-                   KS2sample_c_Rcpp(Nx, Ny, KIND, M, DSTAT, W_vec, tol)
-                   )
+  result <- if (tail) KS2sample_Rcpp(Nx, Ny, KIND, M, DSTAT, W_vec, tol) else KS2sample_c_Rcpp(Nx, Ny, KIND, M, DSTAT, W_vec, tol)
   if(result < -2.5){
     stop("Calculation unstable")
   }

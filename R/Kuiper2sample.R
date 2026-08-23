@@ -31,12 +31,9 @@ Kuiper2sample <- function(x, y, conservative = F, tail = T) {
     }
   }
   
-  names(DSTAT) <- "v"
+  names(DSTAT) <- "D"
   Method <- paste("Two-sample Kuiper Test", Method1, Method2)
-  result <- ifelse(tail,
-                   Kuiper2sample_Rcpp(Nx, Ny, M, DSTAT),
-                   Kuiper2sample_c_Rcpp(Nx, Ny, M, DSTAT)
-  )
+  result <- if (tail) Kuiper2sample_Rcpp(Nx, Ny, M, DSTAT) else Kuiper2sample_c_Rcpp(Nx, Ny, M, DSTAT)
   
   if(result < -2.5){
     stop("Calculation unstable")
